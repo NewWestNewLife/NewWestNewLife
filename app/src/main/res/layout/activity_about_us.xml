@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Created by Taran Rai Chris Kwon on 17/11/17 2:06 PM
+  ~ Copyright (c) 2017. All rights reserved
+  ~
+  ~ Last modified 16/11/17 11:47 AM
+-->
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/details_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="ca.bcit.project.newwestnewlife.AboutUs" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/about_heading"
+            style="@style/ActivityBanner"/>
+
+        <ImageView
+            android:layout_width="@dimen/logo_width_home"
+            android:layout_height="@dimen/logo_height_home"
+            android:src="@drawable/logo"
+            style="@style/homepageImage"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/app_name"
+            style="@style/about_info"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/created_by"
+            style="@style/about_info"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/copyright_info"
+            style="@style/about_info"/>
+
+        <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/coordinator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context="ca.bcit.project.newwestnewlife.AboutUs">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floating_back_button"
+            style="@style/floating_action_bar_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fillViewport="true" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>
